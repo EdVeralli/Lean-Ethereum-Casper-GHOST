@@ -22,6 +22,31 @@ Analisis exhaustivo con pseudocodigo de algoritmos, demostraciones formales, dia
 
 Version condensada con los puntos fundamentales: definiciones clave, tablas comparativas y sintesis.
 
+### Ejemplos Practicos
+
+#### Gasper: Consenso Actual de Ethereum
+
+| Formato | Archivo |
+|---|---|
+| Markdown | [`gasper-ethereum-example.md`](gasper-ethereum-example.md) |
+| PDF | [`gasper-ethereum-example.pdf`](gasper-ethereum-example.pdf) |
+
+Ejemplo paso a paso del sistema actual de consenso (Casper FFG + LMD-GHOST) con 4 validadores, mostrando justificacion, finalizacion, resolución de forks y detección de ataques.
+
+#### LEAN Consensus: Protocolo 3-Slot Finality
+
+| Formato | Archivo |
+|---|---|
+| Markdown | [`lean-consensus-example.md`](lean-consensus-example.md) |
+| PDF | [`lean-consensus-example.pdf`](lean-consensus-example.pdf) |
+
+Ejemplo detallado del nuevo protocolo 3SF con escenarios de:
+- Operacion normal (happy path)
+- Resolucion de forks temporales
+- Deteccion de ataques bizantinos y slashing
+- Analisis de ataque del 51% y costo economico
+- Comparacion: **64x mas rapido** (12.8 min → 12 seg)
+
 ## Temas cubiertos
 
 ### Parte I — Los Cimientos (Protocolo Actual)
