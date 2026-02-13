@@ -47,6 +47,34 @@ Ejemplo detallado del nuevo protocolo 3SF con escenarios de:
 - Analisis de ataque del 51% y costo economico
 - Comparacion: **64x mas rapido** (12.8 min → 12 seg)
 
+### 🧪 Simulador Interactivo: 3SF-mini
+
+| Directorio | Descripción |
+|---|---|
+| [`3sf-mini/`](3sf-mini/) | **Implementación ejecutable del protocolo 3-Slot Finality** |
+
+Simulador completo en Python (~200 líneas) con:
+- ✅ **LMD GHOST fork choice** - Implementación funcional del algoritmo
+- ✅ **Backoff technique** - Justificación progresiva bajo alta latencia
+- ✅ **Safe target** - Garantía de seguridad con supermayoría 2/3
+- ✅ **P2P Network** - Simulador de red con latencia configurable
+- ✅ **10 validadores** - Red de prueba realista
+
+**Inicio rápido:**
+```bash
+cd 3sf-mini
+python3 simulate.py  # Ejecuta simulación de 85 slots en ~10 segundos
+```
+
+**Documentación completa:**
+- 📘 [README.md](3sf-mini/README.md) - Guía de instalación y uso
+- 🚀 [QUICKSTART.md](3sf-mini/QUICKSTART.md) - Tutorial de 30 segundos
+- 📊 [ANALISIS_SIMULACION.md](3sf-mini/ANALISIS_SIMULACION.md) - Resultados y métricas
+- 💻 [EXAMPLES.md](3sf-mini/EXAMPLES.md) - 10+ ejemplos de código avanzado
+- 📚 [INDEX.md](3sf-mini/INDEX.md) - Índice completo de recursos
+
+**Repositorio oficial:** [ethereum/research/3sf-mini](https://github.com/ethereum/research/tree/master/3sf-mini)
+
 ## Temas cubiertos
 
 ### Parte I — Los Cimientos (Protocolo Actual)

@@ -1,0 +1,9 @@
+# Dependencias opcionales para visualización
+# El simulador básico NO requiere estas dependencias
+
+matplotlib>=3.5.0
+networkx>=2.6.0
+
+# Para desarrollo (opcional)
+# pytest>=7.0.0
+# black>=22.0.0
