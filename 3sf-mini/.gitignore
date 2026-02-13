@@ -32,3 +32,9 @@ Thumbs.db
 output_*.txt
 results_*.log
 simulation_*.log
+
+# Visualizations
+visualizations/
+*.png
+*.gif
+*.mp4
