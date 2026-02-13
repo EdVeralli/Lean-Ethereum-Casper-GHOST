@@ -64,6 +64,50 @@ Ejemplo detallado del nuevo protocolo 3SF con escenarios de:
 - Ataques conocidos a Gasper y como Lean los resuelve
 - Roadmap 2022-2035
 
+## Implementaciones y codigo relacionado
+
+### Spec de referencia
+
+| Repositorio | Lenguaje | Descripcion |
+|---|---|---|
+| [ethereum/research/3sf-mini](https://github.com/ethereum/research/tree/master/3sf-mini) | Python | Implementacion de referencia canonica del protocolo 3SF-mini (~200 lineas) |
+
+### Verificacion formal
+
+| Repositorio | Lenguaje | Que verifica |
+|---|---|---|
+| [freespek/ssf-mc](https://github.com/freespek/ssf-mc) | TLA+ / SMT / Alloy | Model checking de 3SF con paper publicado ([arXiv:2501.07958](https://arxiv.org/abs/2501.07958)) |
+| [runtimeverification/casper-proofs](https://github.com/runtimeverification/casper-proofs) | Coq | Accountable Safety y Plausible Liveness de Casper FFG |
+| [runtimeverification/beacon-chain-verification](https://github.com/runtimeverification/beacon-chain-verification) | Coq | Seguridad completa de Gasper (Safety + Liveness + Slashable Bound) |
+| [Koukyosyumei/PoL](https://github.com/Koukyosyumei/PoL) | Lean 4 | Verificacion de consenso simplificado (educativo/research) |
+
+### Clientes de Lean Consensus (nueva generacion)
+
+| Repositorio | Lenguaje | Equipo | Estado |
+|---|---|---|---|
+| [lambdaclass/ethlambda](https://github.com/lambdaclass/ethlambda) | Rust | LambdaClass | Activo, en pq-devnet-2 |
+| [ReamLabs/ream](https://github.com/ReamLabs/ream) | Rust | Ream Labs | Activo |
+| [blockblaz/zeam](https://github.com/blockblaz/zeam) | Zig | Blockblaz | WIP, financiado por la EF |
+| [qdrvm](https://github.com/qdrvm) (Qlean) | C++ | Quadrivium | Activo en devnets |
+| [Pier-Two](https://github.com/Pier-Two) (Lantern) | C | Pier Two | Activo |
+| [grandinetech/grandine](https://github.com/grandinetech/grandine) | Rust | Grandine Tech | Produccion + colaborando con Lean |
+| [sigp/lighthouse](https://github.com/sigp/lighthouse) | Rust | Sigma Prime | Fork interno para Lean |
+
+### Infraestructura de devnets
+
+| Repositorio | Descripcion |
+|---|---|
+| [blockblaz/lean-quickstart](https://github.com/blockblaz/lean-quickstart) | Herramienta para levantar redes locales multi-cliente |
+| [ReamLabs/lean-spec-tests](https://github.com/ReamLabs/lean-spec-tests) | Tests comunes para clientes de Lean Consensus |
+| [ReamLabs/leanroadmap](https://github.com/ReamLabs/leanroadmap) | Tracking del progreso de investigacion de Lean Consensus |
+
+### Papers de 3SF
+
+- D'Amato & Zanolini (2023) — *A Simple Single Slot Finality Protocol* ([arXiv:2302.12745](https://arxiv.org/abs/2302.12745))
+- D'Amato, Saltini, Tran & Zanolini (2024) — *3SF: 3-Slot Finality* ([arXiv:2411.00558](https://arxiv.org/abs/2411.00558))
+
+> **Nota:** A la fecha (febrero 2026) no existe una formalizacion en Lean 4 de Casper FFG, LMD-GHOST ni Gasper. Las pruebas formales existentes usan Coq y TLA+.
+
 ## Fuente primaria
 
 - [lean Ethereum — Justin Drake, Ethereum Foundation Blog (Jul 31, 2025)](https://blog.ethereum.org/2025/07/31/lean-ethereum)
