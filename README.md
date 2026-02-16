@@ -47,6 +47,28 @@ Ejemplo detallado del nuevo protocolo 3SF con escenarios de:
 - Analisis de ataque del 51% y costo economico
 - Comparacion: **64x mas rapido** (12.8 min → 12 seg)
 
+### Estudio Tecnico: Protocolo 3SF (19 secciones, ~840 lineas)
+
+| Formato | Archivo |
+|---|---|
+| Markdown | [`LEAN_CONSENSUS_3SF_Protocolo.md`](LEAN_CONSENSUS_3SF_Protocolo.md) |
+
+Estudio tecnico completo del protocolo 3-Slot Finality basado en papers academicos, especificaciones de referencia y recursos web. Cubre:
+- Evolucion de SSF a 3SF y las 3 modificaciones clave
+- Estructura de datos (checkpoint triple, FFG votes, attestations)
+- Mecanica del slot: Propose-Attest-Confirm-Freeze
+- Pipeline de finalidad en 3 slots (paso a paso formal)
+- Reglas de justificacion y finalizacion
+- Fork choice (LMD-GHOST modificado + view-merge)
+- Slashing conditions (E1, E2, + condicion de monotonicidad nueva en 3SF)
+- Accountable Safety Theorem y verificacion formal en TLA+
+- Protocolo Ebb-and-Flow (cadena disponible + cadena finalizada)
+- Comparacion Gasper vs SSF vs 3SF
+- Taxonomia de 8 ataques y como 3SF los elimina
+- Lean Cryptography: leanSig, leanMultisig, hash-based vs lattice-based
+- Estado de clientes, devnets (pq-devnet-0 a pq-devnet-4) y roadmap 2022-2035
+- 20 referencias (papers, specs, blog posts)
+
 ### 🧪 Simulador Interactivo: 3SF-mini
 
 | Directorio | Descripción |
