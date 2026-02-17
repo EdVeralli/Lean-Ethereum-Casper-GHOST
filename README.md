@@ -69,6 +69,22 @@ Estudio tecnico completo del protocolo 3-Slot Finality basado en papers academic
 - Estado de clientes, devnets (pq-devnet-0 a pq-devnet-4) y roadmap 2022-2035
 - 20 referencias (papers, specs, blog posts)
 
+### Analisis de Vulnerabilidades del Protocolo 3SF (11 secciones, ~830 lineas)
+
+| Formato | Archivo |
+|---|---|
+| Markdown | [`LEAN_CONSENSUS_3SF_Analisis_Vulnerabilidades.md`](LEAN_CONSENSUS_3SF_Analisis_Vulnerabilidades.md) |
+
+Analisis critico de deficiencias, mejoras y vulnerabilidades del protocolo 3SF basado en papers academicos, verificacion formal, criticas de la comunidad y analisis economico/game-theoretic. Cubre:
+- 72 hallazgos clasificados por severidad (11 criticos, 23 altos, 22 medios, 16 bajos)
+- Deficiencias en la logica del protocolo (inactivity leak, monotonicidad, view-merge, timing)
+- Brechas en la verificacion formal (composicion ebb-and-flow, liveness, safety bounded)
+- Vulnerabilidades economicas (soborno trustless, cascade de slashing, monopolio de builders, MEV)
+- Criticas de la comunidad (Peter Szilagyi, Vitalik Buterin, preguntas abiertas)
+- Mejoras propuestas con prioridades y roadmap de mitigacion 2026-2028+
+- Matriz de riesgo consolidada con explotabilidad y mitigaciones
+- 22 referencias (papers, repos, blog posts)
+
 ### 🧪 Simulador Interactivo: 3SF-mini
 
 | Directorio | Descripción |
